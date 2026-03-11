@@ -144,7 +144,7 @@ uncached_access_timing_device(uint8_t *addr_access, uint64_t *time_arr, int modi
       clock_end = clock64();
       break;
   }
-
+  *addr_access = temp;
   *time_arr = clock_end - clock_start;
 }
 
